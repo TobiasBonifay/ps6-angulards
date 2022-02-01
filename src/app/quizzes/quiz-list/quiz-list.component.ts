@@ -28,4 +28,9 @@ export class QuizListComponent implements OnInit {
     this.quizService.deleteQuiz(quiz);
     console.log('delete ', quiz);
   }
+
+  editQuiz(quiz : Quiz) {
+    this.quizService.editQuiz(quiz);
+    console.log('edit');
+  }
 }

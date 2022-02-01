@@ -40,4 +40,8 @@ export class QuizService {
     this.quizzes$.next(this.quizzes);
   }
 
+  editQuiz(quiz: Quiz) {
+    // to do
+  }
+
 }

@@ -4,7 +4,8 @@
         <!--More information: https://angular.io/guide/component-interaction-->
         <app-quiz [quiz]="quiz"
                   (quizSelected)="quizSelected($event)"
-                  (quizDelete)="deleteQuiz(quiz)">
+                  (quizDelete)="deleteQuiz(quiz)"
+                  (quizEdit)="editQuiz(quiz)">
         </app-quiz>
     </div>
   </div>

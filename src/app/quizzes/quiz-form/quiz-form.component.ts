@@ -26,7 +26,7 @@ export class QuizFormComponent implements OnInit {
     // Form creation
     this.quizForm = this.formBuilder.group({
       name: [''],
-      theme: [''],
+      theme: ['']
     });
     // You can also add validators to your inputs such as required, maxlength or even create your own validator!
     // More information: https://angular.io/guide/reactive-forms#simple-form-validation
@@ -40,6 +40,7 @@ export class QuizFormComponent implements OnInit {
     // We retrieve here the quiz object from the quizForm and we cast the type "as Quiz".
     const quizToCreate: Quiz = this.quizForm.getRawValue() as Quiz;
     quizToCreate.questions = [];
+    quizToCreate.creationDate = new Date();
 
     // Do you need to log your object here in your class? Uncomment the code below
     // and open your console in your browser by pressing F12 and choose the tab "Console".
