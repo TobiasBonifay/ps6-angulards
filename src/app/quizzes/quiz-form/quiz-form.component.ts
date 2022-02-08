@@ -10,7 +10,7 @@ import {QUIZ_LIST} from "../../../mocks/quiz-list.mock";
   templateUrl: './quiz-form.component.html',
   styleUrls: ['./quiz-form.component.scss']
 })
-export class QuizFormComponent implements OnInit {
+export class EditQuizComponent implements OnInit {
 
   // Note: We are using here ReactiveForms to create our form. Be careful when you look for some documentation to
   // avoid TemplateDrivenForm (another type of form)
